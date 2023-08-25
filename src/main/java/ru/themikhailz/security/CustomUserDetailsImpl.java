@@ -20,6 +20,8 @@ public class CustomUserDetailsImpl implements UserDetails {
     private boolean isCredentialsNonExpired;
     private boolean isEnabled;
 
+    public CustomUserDetailsImpl() {}
+
     private CustomUserDetailsImpl(UUID id, String username, String password, Role role, boolean isAccountNonExpired, boolean isAccountNonLocked, boolean isCredentialsNonExpired, boolean isEnabled) {
         this.id = id;
         this.username = username;
